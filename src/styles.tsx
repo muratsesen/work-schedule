@@ -15,9 +15,3 @@ export const input = {
   height: '50px',
   width: '500px'
 };
-
-export const templates = ['Work',
-'Break',
-'MCask',
-'BS',
-'SideP']

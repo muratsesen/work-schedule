@@ -5,6 +5,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import * as styles from "./styles";
+import { templates } from "./templates";
 
 function App() {
   const [processes, setProcesses] = useState([]);
@@ -92,7 +93,7 @@ function App() {
           onKeyDown={handleEnterPress}
         />
         <div style={{ ...styles.templateContainer }}>
-          {styles.templates.map(item => <button onClick={()=>handleTemplateClick(item)}>{item}</button>)}
+          {templates.map(item => <button onClick={()=>handleTemplateClick(item)}>{item}</button>)}
         </div>
       </div>
       <div className="process-list">
